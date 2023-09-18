@@ -1,0 +1,1634 @@
+
+C:\Users\tiago\AppData\Local\Temp\arduino\sketches\E829B3F5F6FFE7CF514003D3825F04DC/firmware.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	20 c0       	rjmp	.+64     	; 0x42 <__ctors_end>
+   2:	3a c0       	rjmp	.+116    	; 0x78 <__bad_interrupt>
+   4:	62 c1       	rjmp	.+708    	; 0x2ca <__vector_2>
+   6:	38 c0       	rjmp	.+112    	; 0x78 <__bad_interrupt>
+   8:	37 c0       	rjmp	.+110    	; 0x78 <__bad_interrupt>
+   a:	15 c1       	rjmp	.+554    	; 0x236 <__vector_5>
+   c:	35 c0       	rjmp	.+106    	; 0x78 <__bad_interrupt>
+   e:	34 c0       	rjmp	.+104    	; 0x78 <__bad_interrupt>
+  10:	33 c0       	rjmp	.+102    	; 0x78 <__bad_interrupt>
+  12:	32 c0       	rjmp	.+100    	; 0x78 <__bad_interrupt>
+  14:	31 c0       	rjmp	.+98     	; 0x78 <__bad_interrupt>
+  16:	30 c0       	rjmp	.+96     	; 0x78 <__bad_interrupt>
+  18:	2f c0       	rjmp	.+94     	; 0x78 <__bad_interrupt>
+  1a:	2e c0       	rjmp	.+92     	; 0x78 <__bad_interrupt>
+  1c:	2d c0       	rjmp	.+90     	; 0x78 <__bad_interrupt>
+
+0000001e <__trampolines_end>:
+__trampolines_start():
+  1e:	01 03       	mulsu	r16, r17
+  20:	00 00       	nop
+  22:	04 00       	.word	0x0004	; ????
+
+00000024 <port_to_output_PGM>:
+  24:	00 00 00 00 38 00                                   ....8.
+
+0000002a <port_to_mode_PGM>:
+  2a:	00 00 00 00 37 00                                   ....7.
+
+00000030 <port_to_input_PGM>:
+  30:	00 00 00 00 36 00                                   ....6.
+
+00000036 <digital_pin_to_port_PGM>:
+  36:	02 02 02 02 02 02                                   ......
+
+0000003c <digital_pin_to_bit_mask_PGM>:
+  3c:	01 02 04 08 10 20                                   ..... 
+
+00000042 <__ctors_end>:
+__dtors_end():
+  42:	11 24       	eor	r1, r1
+  44:	1f be       	out	0x3f, r1	; 63
+  46:	cf e5       	ldi	r28, 0x5F	; 95
+  48:	d2 e0       	ldi	r29, 0x02	; 2
+  4a:	de bf       	out	0x3e, r29	; 62
+  4c:	cd bf       	out	0x3d, r28	; 61
+
+0000004e <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  4e:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  50:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  52:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  54:	ea e5       	ldi	r30, 0x5A	; 90
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  56:	f6 e0       	ldi	r31, 0x06	; 6
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  58:	02 c0       	rjmp	.+4      	; 0x5e <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  5a:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  5c:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  5e:	a2 36       	cpi	r26, 0x62	; 98
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  60:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  62:	d9 f7       	brne	.-10     	; 0x5a <__do_copy_data+0xc>
+
+00000064 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  64:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  66:	a2 e6       	ldi	r26, 0x62	; 98
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  68:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  6a:	01 c0       	rjmp	.+2      	; 0x6e <.do_clear_bss_start>
+
+0000006c <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  6c:	1d 92       	st	X+, r1
+
+0000006e <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  6e:	a8 37       	cpi	r26, 0x78	; 120
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  70:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  72:	e1 f7       	brne	.-8      	; 0x6c <.do_clear_bss_loop>
+.do_clear_bss_start():
+  74:	e2 d1       	rcall	.+964    	; 0x43a <main>
+  76:	ef c2       	rjmp	.+1502   	; 0x656 <_exit>
+
+00000078 <__bad_interrupt>:
+__vector_1():
+  78:	c3 cf       	rjmp	.-122    	; 0x0 <__vectors>
+
+0000007a <digitalRead.constprop.0>:
+digitalRead():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:169
+
+int digitalRead(uint8_t pin)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  7a:	ef e3       	ldi	r30, 0x3F	; 63
+  7c:	f0 e0       	ldi	r31, 0x00	; 0
+  7e:	84 91       	lpm	r24, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:170
+  uint8_t port = digitalPinToPort(pin);
+  80:	e9 e3       	ldi	r30, 0x39	; 57
+  82:	f0 e0       	ldi	r31, 0x00	; 0
+  84:	e4 91       	lpm	r30, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:172
+
+  if (port == NOT_A_PIN) return LOW;
+  86:	ee 23       	and	r30, r30
+  88:	71 f0       	breq	.+28     	; 0xa6 <digitalRead.constprop.0+0x2c>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:180
+  // "read" should *NEVER* change the behavior of the thing you're using it on.
+  // That's why it's called "read" not "write". As an added bonus, sets the
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+  8a:	f0 e0       	ldi	r31, 0x00	; 0
+  8c:	ee 0f       	add	r30, r30
+  8e:	ff 1f       	adc	r31, r31
+  90:	e0 5d       	subi	r30, 0xD0	; 208
+  92:	ff 4f       	sbci	r31, 0xFF	; 255
+  94:	a5 91       	lpm	r26, Z+
+  96:	b4 91       	lpm	r27, Z
+  98:	ec 91       	ld	r30, X
+  9a:	e8 23       	and	r30, r24
+  9c:	81 e0       	ldi	r24, 0x01	; 1
+  9e:	90 e0       	ldi	r25, 0x00	; 0
+  a0:	21 f4       	brne	.+8      	; 0xaa <digitalRead.constprop.0+0x30>
+  a2:	80 e0       	ldi	r24, 0x00	; 0
+  a4:	08 95       	ret
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:172
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  uint8_t port = digitalPinToPort(pin);
+
+  if (port == NOT_A_PIN) return LOW;
+  a6:	80 e0       	ldi	r24, 0x00	; 0
+  a8:	90 e0       	ldi	r25, 0x00	; 0
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:182
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+  return LOW;
+}
+  aa:	08 95       	ret
+
+000000ac <pinMode>:
+pinMode():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  ac:	cf 93       	push	r28
+  ae:	df 93       	push	r29
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  b0:	87 ff       	sbrs	r24, 7
+  b2:	07 c0       	rjmp	.+14     	; 0xc2 <pinMode+0x16>
+  b4:	8f 77       	andi	r24, 0x7F	; 127
+  b6:	69 f1       	breq	.+90     	; 0x112 <pinMode+0x66>
+  b8:	81 30       	cpi	r24, 0x01	; 1
+  ba:	69 f1       	breq	.+90     	; 0x116 <pinMode+0x6a>
+  bc:	82 30       	cpi	r24, 0x02	; 2
+  be:	69 f1       	breq	.+90     	; 0x11a <pinMode+0x6e>
+  c0:	83 e0       	ldi	r24, 0x03	; 3
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:35
+  uint8_t bit = digitalPinToBitMask(pin);
+  c2:	90 e0       	ldi	r25, 0x00	; 0
+  c4:	fc 01       	movw	r30, r24
+  c6:	e4 5c       	subi	r30, 0xC4	; 196
+  c8:	ff 4f       	sbci	r31, 0xFF	; 255
+  ca:	24 91       	lpm	r18, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+  cc:	8a 5c       	subi	r24, 0xCA	; 202
+  ce:	9f 4f       	sbci	r25, 0xFF	; 255
+  d0:	fc 01       	movw	r30, r24
+  d2:	84 91       	lpm	r24, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+  d4:	88 23       	and	r24, r24
+  d6:	d1 f0       	breq	.+52     	; 0x10c <pinMode+0x60>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+  d8:	90 e0       	ldi	r25, 0x00	; 0
+  da:	88 0f       	add	r24, r24
+  dc:	99 1f       	adc	r25, r25
+  de:	fc 01       	movw	r30, r24
+  e0:	e6 5d       	subi	r30, 0xD6	; 214
+  e2:	ff 4f       	sbci	r31, 0xFF	; 255
+  e4:	a5 91       	lpm	r26, Z+
+  e6:	b4 91       	lpm	r27, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+  e8:	fc 01       	movw	r30, r24
+  ea:	ec 5d       	subi	r30, 0xDC	; 220
+  ec:	ff 4f       	sbci	r31, 0xFF	; 255
+  ee:	c5 91       	lpm	r28, Z+
+  f0:	d4 91       	lpm	r29, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:44
+
+  if (mode == INPUT) {
+  f2:	61 11       	cpse	r22, r1
+  f4:	14 c0       	rjmp	.+40     	; 0x11e <pinMode+0x72>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:45
+    uint8_t oldSREG = SREG;
+  f6:	9f b7       	in	r25, 0x3f	; 63
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:46
+                cli();
+  f8:	f8 94       	cli
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:47
+    *reg &= ~bit;
+  fa:	8c 91       	ld	r24, X
+  fc:	e2 2f       	mov	r30, r18
+  fe:	e0 95       	com	r30
+ 100:	8e 23       	and	r24, r30
+ 102:	8c 93       	st	X, r24
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:48
+    *out &= ~bit;
+ 104:	28 81       	ld	r18, Y
+ 106:	e2 23       	and	r30, r18
+ 108:	e8 83       	st	Y, r30
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:49
+    SREG = oldSREG;
+ 10a:	9f bf       	out	0x3f, r25	; 63
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:62
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+ 10c:	df 91       	pop	r29
+ 10e:	cf 91       	pop	r28
+ 110:	08 95       	ret
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:34
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 112:	85 e0       	ldi	r24, 0x05	; 5
+ 114:	d6 cf       	rjmp	.-84     	; 0xc2 <pinMode+0x16>
+ 116:	82 e0       	ldi	r24, 0x02	; 2
+ 118:	d4 cf       	rjmp	.-88     	; 0xc2 <pinMode+0x16>
+ 11a:	84 e0       	ldi	r24, 0x04	; 4
+ 11c:	d2 cf       	rjmp	.-92     	; 0xc2 <pinMode+0x16>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:57
+                cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 11e:	8f b7       	in	r24, 0x3f	; 63
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:58
+                cli();
+ 120:	f8 94       	cli
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:59
+    *reg |= bit;
+ 122:	ec 91       	ld	r30, X
+ 124:	e2 2b       	or	r30, r18
+ 126:	ec 93       	st	X, r30
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:60
+    SREG = oldSREG;
+ 128:	8f bf       	out	0x3f, r24	; 63
+ 12a:	f0 cf       	rjmp	.-32     	; 0x10c <pinMode+0x60>
+
+0000012c <setFanSpeed(unsigned char, bool)>:
+setFanSpeed():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:190
+ *   constrain_pwm: True to constrain pwmVal to a valid range, otherwise false to ignore constrain or safe checks
+ *
+ *   returns: void
+ */
+void setFanSpeed(uint8_t pwm_val, const bool constrain_pwm = true) {
+    if (constrain_pwm) {
+ 12c:	66 23       	and	r22, r22
+ 12e:	81 f1       	breq	.+96     	; 0x190 <setFanSpeed(unsigned char, bool)+0x64>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:191
+        pwm_val = constrain(pwm_val, PWM_MIN_VALUE, PWM_MAX_VALUE);
+ 130:	81 3a       	cpi	r24, 0xA1	; 161
+ 132:	70 f1       	brcs	.+92     	; 0x190 <setFanSpeed(unsigned char, bool)+0x64>
+ 134:	80 ea       	ldi	r24, 0xA0	; 160
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:200
+    if (pwm_val < FAN_MIN_PWM_TO_ROTATE) {
+        pwm_val = PWM_MIN_VALUE;
+    }
+#endif
+
+    FanPwm = PWM_MAX_VALUE - pwm_val; // Invert logic, N-FET, open drain
+ 136:	90 ea       	ldi	r25, 0xA0	; 160
+ 138:	98 1b       	sub	r25, r24
+ 13a:	98 bd       	out	0x28, r25	; 40
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:201
+    fan_state = pwm_val == 0 ? FAN_STATE_OFF_BYSPEED : FAN_STATE_ON;
+ 13c:	91 e0       	ldi	r25, 0x01	; 1
+ 13e:	81 11       	cpse	r24, r1
+ 140:	01 c0       	rjmp	.+2      	; 0x144 <setFanSpeed(unsigned char, bool)+0x18>
+ 142:	90 e0       	ldi	r25, 0x00	; 0
+ 144:	90 93 60 00 	sts	0x0060, r25	; 0x800060 <__DATA_REGION_ORIGIN__>
+digitalWrite():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:139
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t timer = digitalPinToTimer(pin);
+ 148:	e2 e2       	ldi	r30, 0x22	; 34
+ 14a:	f0 e0       	ldi	r31, 0x00	; 0
+ 14c:	24 91       	lpm	r18, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+ 14e:	e0 e4       	ldi	r30, 0x40	; 64
+ 150:	f0 e0       	ldi	r31, 0x00	; 0
+ 152:	94 91       	lpm	r25, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+ 154:	ea e3       	ldi	r30, 0x3A	; 58
+ 156:	f0 e0       	ldi	r31, 0x00	; 0
+ 158:	e4 91       	lpm	r30, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 15a:	ee 23       	and	r30, r30
+ 15c:	c1 f0       	breq	.+48     	; 0x18e <setFanSpeed(unsigned char, bool)+0x62>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 15e:	22 23       	and	r18, r18
+ 160:	29 f0       	breq	.+10     	; 0x16c <setFanSpeed(unsigned char, bool)+0x40>
+turnOffPWM():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+  #if defined(TCCR0A) && defined(COM0A1)
+    if( timer == TIMER0A){
+ 162:	21 30       	cpi	r18, 0x01	; 1
+ 164:	c9 f4       	brne	.+50     	; 0x198 <setFanSpeed(unsigned char, bool)+0x6c>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:68
+      cbi(TCCR0A, COM0A1);
+ 166:	2a b5       	in	r18, 0x2a	; 42
+ 168:	2f 77       	andi	r18, 0x7F	; 127
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:74
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+      cbi(TCCR0A, COM0B1);
+ 16a:	2a bd       	out	0x2a, r18	; 42
+digitalWrite():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:150
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 16c:	f0 e0       	ldi	r31, 0x00	; 0
+ 16e:	ee 0f       	add	r30, r30
+ 170:	ff 1f       	adc	r31, r31
+ 172:	ec 5d       	subi	r30, 0xDC	; 220
+ 174:	ff 4f       	sbci	r31, 0xFF	; 255
+ 176:	a5 91       	lpm	r26, Z+
+ 178:	b4 91       	lpm	r27, Z
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:152
+
+  if (val == LOW) {
+ 17a:	81 11       	cpse	r24, r1
+ 17c:	1e c0       	rjmp	.+60     	; 0x1ba <setFanSpeed(unsigned char, bool)+0x8e>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:153
+    uint8_t oldSREG = SREG;
+ 17e:	8f b7       	in	r24, 0x3f	; 63
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:154
+    cli();
+ 180:	f8 94       	cli
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:155
+    *out &= ~bit;
+ 182:	2c 91       	ld	r18, X
+ 184:	e9 2f       	mov	r30, r25
+ 186:	e0 95       	com	r30
+ 188:	e2 23       	and	r30, r18
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:160
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+ 18a:	ec 93       	st	X, r30
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:161
+    SREG = oldSREG;
+ 18c:	8f bf       	out	0x3f, r24	; 63
+setFanSpeed():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:203
+    digitalWrite(PIN_OUTPUT_FAN_GND, fan_state);
+}
+ 18e:	08 95       	ret
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:195
+    if (constrain_pwm) {
+        pwm_val = constrain(pwm_val, PWM_MIN_VALUE, PWM_MAX_VALUE);
+    }
+
+#if defined(FAN_MIN_PWM_TO_ROTATE) && FAN_MIN_PWM_TO_ROTATE > 0
+    if (pwm_val < FAN_MIN_PWM_TO_ROTATE) {
+ 190:	82 30       	cpi	r24, 0x02	; 2
+ 192:	88 f6       	brcc	.-94     	; 0x136 <setFanSpeed(unsigned char, bool)+0xa>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:196
+        pwm_val = PWM_MIN_VALUE;
+ 194:	80 e0       	ldi	r24, 0x00	; 0
+ 196:	cf cf       	rjmp	.-98     	; 0x136 <setFanSpeed(unsigned char, bool)+0xa>
+turnOffPWM():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:73
+      cbi(TCCR0A, COM0A1);
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+ 198:	22 30       	cpi	r18, 0x02	; 2
+ 19a:	19 f4       	brne	.+6      	; 0x1a2 <setFanSpeed(unsigned char, bool)+0x76>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:74
+      cbi(TCCR0A, COM0B1);
+ 19c:	2a b5       	in	r18, 0x2a	; 42
+ 19e:	2f 7d       	andi	r18, 0xDF	; 223
+ 1a0:	e4 cf       	rjmp	.-56     	; 0x16a <setFanSpeed(unsigned char, bool)+0x3e>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:106
+      //cbi(TCCR1C,COM1D0);
+    } else
+  #else
+    // Timer1 for non-x61/x7
+    #if defined(TCCR1) && defined(COM1A1) // x5
+      if(timer == TIMER1A){
+ 1a2:	23 30       	cpi	r18, 0x03	; 3
+ 1a4:	21 f4       	brne	.+8      	; 0x1ae <setFanSpeed(unsigned char, bool)+0x82>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:107
+        TCCR1 &= ~(1<<COM1A1);
+ 1a6:	20 b7       	in	r18, 0x30	; 48
+ 1a8:	2f 7d       	andi	r18, 0xDF	; 223
+ 1aa:	20 bf       	out	0x30, r18	; 48
+ 1ac:	df cf       	rjmp	.-66     	; 0x16c <setFanSpeed(unsigned char, bool)+0x40>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:112
+        //cbi(TCCR1, COM1A0);
+      } else
+    #endif
+    #if defined(TCCR1) && defined(COM1B1) // x5
+      if( timer == TIMER1B){
+ 1ae:	24 30       	cpi	r18, 0x04	; 4
+ 1b0:	e9 f6       	brne	.-70     	; 0x16c <setFanSpeed(unsigned char, bool)+0x40>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:113
+        GTCCR &= ~(1<<COM1B1);
+ 1b2:	2c b5       	in	r18, 0x2c	; 44
+ 1b4:	2f 7d       	andi	r18, 0xDF	; 223
+ 1b6:	2c bd       	out	0x2c, r18	; 44
+ 1b8:	d9 cf       	rjmp	.-78     	; 0x16c <setFanSpeed(unsigned char, bool)+0x40>
+digitalWrite():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:158
+    uint8_t oldSREG = SREG;
+    cli();
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 1ba:	8f b7       	in	r24, 0x3f	; 63
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:159
+    cli();
+ 1bc:	f8 94       	cli
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_digital.c:160
+    *out |= bit;
+ 1be:	ec 91       	ld	r30, X
+ 1c0:	e9 2b       	or	r30, r25
+ 1c2:	e3 cf       	rjmp	.-58     	; 0x18a <setFanSpeed(unsigned char, bool)+0x5e>
+
+000001c4 <readFanSpeed()>:
+analogRead():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_analog.c:72
+  #ifndef ADCSRA
+  return digitalRead(analogInputToDigitalPin(pin)) ? 1023 : 0; //No ADC, so read as a digital pin instead.
+  #endif
+
+  #if defined(ADMUX)
+  ADMUX = ((analog_reference & ADMUX_REFS_MASK) << REFS0) | ((pin & ADMUX_MUX_MASK) << MUX0); //select the channel and reference
+ 1c4:	81 e0       	ldi	r24, 0x01	; 1
+ 1c6:	87 b9       	out	0x07, r24	; 7
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_analog.c:74
+  #if defined(REFS2)
+  ADMUX |= (((analog_reference & 0x04) >> 2) << REFS2); //some have an extra reference bit in a weird position.
+ 1c8:	87 b1       	in	r24, 0x07	; 7
+ 1ca:	87 b9       	out	0x07, r24	; 7
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_analog.c:79
+  #endif
+  #endif
+
+  #if defined(HAVE_ADC) && HAVE_ADC
+  sbi(ADCSRA, ADSC); //Start conversion
+ 1cc:	36 9a       	sbi	0x06, 6	; 6
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_analog.c:81
+
+  while(ADCSRA & (1<<ADSC)); //Wait for conversion to complete.
+ 1ce:	36 99       	sbic	0x06, 6	; 6
+ 1d0:	fe cf       	rjmp	.-4      	; 0x1ce <readFanSpeed()+0xa>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_analog.c:83
+
+  uint8_t low = ADCL;
+ 1d2:	84 b1       	in	r24, 0x04	; 4
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_analog.c:84
+  uint8_t high = ADCH;
+ 1d4:	65 b1       	in	r22, 0x05	; 5
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring_analog.c:85
+  return (high << 8) | low;
+ 1d6:	76 2f       	mov	r23, r22
+ 1d8:	68 2f       	mov	r22, r24
+readFanSpeed():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:176
+    pot_value = analogSmoothingAddRead(&smoothPot, analogRead(PIN_INPUT_POT));
+#else
+    pot_value = analogRead(PIN_INPUT_POT);
+#endif
+
+    pwm_value = map(pot_value, ANALOG_POT_MIN_VALUE, ANALOG_POT_MAX_VALUE, PWM_MIN_VALUE, PWM_MAX_VALUE);
+ 1da:	90 e0       	ldi	r25, 0x00	; 0
+ 1dc:	80 e0       	ldi	r24, 0x00	; 0
+map():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/WMath.cpp:56
+  return random(diff) + howsmall;
+}
+
+long map(long x, long in_min, long in_max, long out_min, long out_max)
+{
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+ 1de:	20 ea       	ldi	r18, 0xA0	; 160
+ 1e0:	30 e0       	ldi	r19, 0x00	; 0
+ 1e2:	40 e0       	ldi	r20, 0x00	; 0
+ 1e4:	50 e0       	ldi	r21, 0x00	; 0
+ 1e6:	d7 d1       	rcall	.+942    	; 0x596 <__mulsi3>
+ 1e8:	20 ea       	ldi	r18, 0xA0	; 160
+ 1ea:	33 e0       	ldi	r19, 0x03	; 3
+ 1ec:	40 e0       	ldi	r20, 0x00	; 0
+ 1ee:	50 e0       	ldi	r21, 0x00	; 0
+ 1f0:	eb d1       	rcall	.+982    	; 0x5c8 <__divmodsi4>
+readFanSpeed():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:176
+ 1f2:	20 93 6a 00 	sts	0x006A, r18	; 0x80006a <pwm_value>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:177
+}
+ 1f6:	08 95       	ret
+
+000001f8 <UserSettings const& EEPROMClass::put<UserSettings>(int, UserSettings const&) [clone .isra.2] [clone .constprop.6]>:
+_ZN11EEPROMClass3putI12UserSettingsEERKT_iS4_.isra.2():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:152
+        uint8_t *ptr = (uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  *ptr++ = *e;
+        return t;
+    }
+
+    template< typename T > const T &put( int idx, const T &t ){
+ 1f8:	ff 92       	push	r15
+ 1fa:	0f 93       	push	r16
+ 1fc:	1f 93       	push	r17
+ 1fe:	cf 93       	push	r28
+ 200:	df 93       	push	r29
+ 202:	04 e7       	ldi	r16, 0x74	; 116
+ 204:	10 e0       	ldi	r17, 0x00	; 0
+ 206:	d0 e0       	ldi	r29, 0x00	; 0
+ 208:	c0 e0       	ldi	r28, 0x00	; 0
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:155
+        EEPtr e = idx;
+        const uint8_t *ptr = (const uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  (*e).update( *ptr++ );
+ 20a:	f8 01       	movw	r30, r16
+ 20c:	f1 90       	ld	r15, Z+
+ 20e:	8f 01       	movw	r16, r30
+operator*():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ 210:	ce 01       	movw	r24, r28
+ 212:	ab d1       	rcall	.+854    	; 0x56a <eeprom_read_byte>
+update():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:74
+    EERef &operator &=( uint8_t in )     { return *this = **this & in; }
+    EERef &operator |=( uint8_t in )     { return *this = **this | in; }
+    EERef &operator <<=( uint8_t in )    { return *this = **this << in; }
+    EERef &operator >>=( uint8_t in )    { return *this = **this >> in; }
+
+    EERef &update( uint8_t in )          { return  in != *this ? *this = in : *this; }
+ 214:	f8 16       	cp	r15, r24
+ 216:	19 f0       	breq	.+6      	; 0x21e <UserSettings const& EEPROMClass::put<UserSettings>(int, UserSettings const&) [clone .isra.2] [clone .constprop.6]+0x26>
+_ZN5EERefaSEh():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:61
+    //Assignment/write members.
+    EERef &operator=( const EERef &ref ) { return *this = *ref; }
+    #if  (defined(__AVR_ATtinyX41__) && F_CPU==16000000 && CLOCK_SOURCE==0)
+      EERef &operator=( uint8_t in )       { return safe_eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+    #else
+      EERef &operator=( uint8_t in )       { return eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+ 218:	6f 2d       	mov	r22, r15
+ 21a:	ce 01       	movw	r24, r28
+ 21c:	ae d1       	rcall	.+860    	; 0x57a <eeprom_write_byte>
+ 21e:	21 96       	adiw	r28, 0x01	; 1
+_ZN11EEPROMClass3putI12UserSettingsEERKT_iS4_.isra.2():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:155
+    }
+
+    template< typename T > const T &put( int idx, const T &t ){
+        EEPtr e = idx;
+        const uint8_t *ptr = (const uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  (*e).update( *ptr++ );
+ 220:	c4 30       	cpi	r28, 0x04	; 4
+ 222:	d1 05       	cpc	r29, r1
+ 224:	91 f7       	brne	.-28     	; 0x20a <UserSettings const& EEPROMClass::put<UserSettings>(int, UserSettings const&) [clone .isra.2] [clone .constprop.6]+0x12>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:157
+        return t;
+    }
+ 226:	84 e7       	ldi	r24, 0x74	; 116
+ 228:	90 e0       	ldi	r25, 0x00	; 0
+ 22a:	df 91       	pop	r29
+ 22c:	cf 91       	pop	r28
+ 22e:	1f 91       	pop	r17
+ 230:	0f 91       	pop	r16
+ 232:	ff 90       	pop	r15
+ 234:	08 95       	ret
+
+00000236 <__vector_5>:
+__vector_5():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:154
+      #error "cannot find Millis() timer overflow vector"
+    #endif
+  #else
+    #error "Millis() timer not defined!"
+  #endif
+  {
+ 236:	1f 92       	push	r1
+ 238:	0f 92       	push	r0
+ 23a:	0f b6       	in	r0, 0x3f	; 63
+ 23c:	0f 92       	push	r0
+ 23e:	11 24       	eor	r1, r1
+ 240:	2f 93       	push	r18
+ 242:	3f 93       	push	r19
+ 244:	8f 93       	push	r24
+ 246:	9f 93       	push	r25
+ 248:	af 93       	push	r26
+ 24a:	bf 93       	push	r27
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:157
+    // copy these to local variables so they can be stored in registers
+    // (volatile variables must be read from memory on every access)
+    unsigned long m = millis_timer_millis;
+ 24c:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <millis_timer_millis>
+ 250:	90 91 71 00 	lds	r25, 0x0071	; 0x800071 <millis_timer_millis+0x1>
+ 254:	a0 91 72 00 	lds	r26, 0x0072	; 0x800072 <millis_timer_millis+0x2>
+ 258:	b0 91 73 00 	lds	r27, 0x0073	; 0x800073 <millis_timer_millis+0x3>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:158
+    unsigned char f = millis_timer_fract;
+ 25c:	30 91 6f 00 	lds	r19, 0x006F	; 0x80006f <millis_timer_fract>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:160
+
+    f += FRACT_INC;
+ 260:	26 e0       	ldi	r18, 0x06	; 6
+ 262:	23 0f       	add	r18, r19
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:162
+
+    if (f >= FRACT_MAX)
+ 264:	2d 37       	cpi	r18, 0x7D	; 125
+ 266:	68 f1       	brcs	.+90     	; 0x2c2 <__stack+0x63>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:164
+    {
+      f -= FRACT_MAX;
+ 268:	29 e8       	ldi	r18, 0x89	; 137
+ 26a:	23 0f       	add	r18, r19
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:166
+    m += 1;
+      m += MILLIS_INC;
+ 26c:	03 96       	adiw	r24, 0x03	; 3
+ 26e:	a1 1d       	adc	r26, r1
+ 270:	b1 1d       	adc	r27, r1
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:173
+    else
+    {
+      m += MILLIS_INC;
+    }
+
+    millis_timer_fract = f;
+ 272:	20 93 6f 00 	sts	0x006F, r18	; 0x80006f <millis_timer_fract>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:174
+    millis_timer_millis = m;
+ 276:	80 93 70 00 	sts	0x0070, r24	; 0x800070 <millis_timer_millis>
+ 27a:	90 93 71 00 	sts	0x0071, r25	; 0x800071 <millis_timer_millis+0x1>
+ 27e:	a0 93 72 00 	sts	0x0072, r26	; 0x800072 <millis_timer_millis+0x2>
+ 282:	b0 93 73 00 	sts	0x0073, r27	; 0x800073 <millis_timer_millis+0x3>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:175
+    millis_timer_overflow_count++;
+ 286:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <millis_timer_overflow_count>
+ 28a:	90 91 6c 00 	lds	r25, 0x006C	; 0x80006c <millis_timer_overflow_count+0x1>
+ 28e:	a0 91 6d 00 	lds	r26, 0x006D	; 0x80006d <millis_timer_overflow_count+0x2>
+ 292:	b0 91 6e 00 	lds	r27, 0x006E	; 0x80006e <millis_timer_overflow_count+0x3>
+ 296:	01 96       	adiw	r24, 0x01	; 1
+ 298:	a1 1d       	adc	r26, r1
+ 29a:	b1 1d       	adc	r27, r1
+ 29c:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <millis_timer_overflow_count>
+ 2a0:	90 93 6c 00 	sts	0x006C, r25	; 0x80006c <millis_timer_overflow_count+0x1>
+ 2a4:	a0 93 6d 00 	sts	0x006D, r26	; 0x80006d <millis_timer_overflow_count+0x2>
+ 2a8:	b0 93 6e 00 	sts	0x006E, r27	; 0x80006e <millis_timer_overflow_count+0x3>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:177
+
+  }
+ 2ac:	bf 91       	pop	r27
+ 2ae:	af 91       	pop	r26
+ 2b0:	9f 91       	pop	r25
+ 2b2:	8f 91       	pop	r24
+ 2b4:	3f 91       	pop	r19
+ 2b6:	2f 91       	pop	r18
+ 2b8:	0f 90       	pop	r0
+ 2ba:	0f be       	out	0x3f, r0	; 63
+ 2bc:	0f 90       	pop	r0
+ 2be:	1f 90       	pop	r1
+ 2c0:	18 95       	reti
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:170
+    m += 1;
+      m += MILLIS_INC;
+    }
+    else
+    {
+      m += MILLIS_INC;
+ 2c2:	02 96       	adiw	r24, 0x02	; 2
+ 2c4:	a1 1d       	adc	r26, r1
+ 2c6:	b1 1d       	adc	r27, r1
+ 2c8:	d4 cf       	rjmp	.-88     	; 0x272 <__stack+0x13>
+
+000002ca <__vector_2>:
+__vector_2():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:325
+    _delay_ms(DELAY_MS);
+}
+
+#if defined(FAN_ENABLE_USER_SWITCH) && FAN_ENABLE_USER_SWITCH
+// Interrupt for the fan switch on/off
+ISR(PCINT0_vect) {
+ 2ca:	1f 92       	push	r1
+ 2cc:	0f 92       	push	r0
+ 2ce:	0f b6       	in	r0, 0x3f	; 63
+ 2d0:	0f 92       	push	r0
+ 2d2:	11 24       	eor	r1, r1
+ 2d4:	2f 92       	push	r2
+ 2d6:	3f 92       	push	r3
+ 2d8:	4f 92       	push	r4
+ 2da:	5f 92       	push	r5
+ 2dc:	6f 92       	push	r6
+ 2de:	7f 92       	push	r7
+ 2e0:	8f 92       	push	r8
+ 2e2:	9f 92       	push	r9
+ 2e4:	af 92       	push	r10
+ 2e6:	bf 92       	push	r11
+ 2e8:	cf 92       	push	r12
+ 2ea:	df 92       	push	r13
+ 2ec:	ef 92       	push	r14
+ 2ee:	ff 92       	push	r15
+ 2f0:	0f 93       	push	r16
+ 2f2:	1f 93       	push	r17
+ 2f4:	2f 93       	push	r18
+ 2f6:	3f 93       	push	r19
+ 2f8:	4f 93       	push	r20
+ 2fa:	5f 93       	push	r21
+ 2fc:	6f 93       	push	r22
+ 2fe:	7f 93       	push	r23
+ 300:	8f 93       	push	r24
+ 302:	9f 93       	push	r25
+ 304:	af 93       	push	r26
+ 306:	bf 93       	push	r27
+ 308:	ef 93       	push	r30
+ 30a:	ff 93       	push	r31
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:326
+    if (digitalRead(PIN_INPUT_SWITCH) == HIGH) return; // Need a low signal first
+ 30c:	b6 de       	rcall	.-660    	; 0x7a <digitalRead.constprop.0>
+ 30e:	01 97       	sbiw	r24, 0x01	; 1
+ 310:	09 f4       	brne	.+2      	; 0x314 <__vector_2+0x4a>
+ 312:	58 c0       	rjmp	.+176    	; 0x3c4 <__vector_2+0xfa>
+millis():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:182
+  }
+
+  unsigned long millis()
+  {
+    unsigned long m;
+    uint8_t oldSREG = SREG;
+ 314:	8f b7       	in	r24, 0x3f	; 63
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:186
+
+    // disable interrupts while we read millis_timer_millis or we might get an
+    // inconsistent value (e.g. in the middle of a write to millis_timer_millis)
+    cli();
+ 316:	f8 94       	cli
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:187
+    m = millis_timer_millis;
+ 318:	40 91 70 00 	lds	r20, 0x0070	; 0x800070 <millis_timer_millis>
+ 31c:	50 91 71 00 	lds	r21, 0x0071	; 0x800071 <millis_timer_millis+0x1>
+ 320:	60 91 72 00 	lds	r22, 0x0072	; 0x800072 <millis_timer_millis+0x2>
+ 324:	70 91 73 00 	lds	r23, 0x0073	; 0x800073 <millis_timer_millis+0x3>
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:188
+    SREG = oldSREG;
+ 328:	8f bf       	out	0x3f, r24	; 63
+__vector_2():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:329
+    unsigned long interrupt_time = millis();
+    // If interrupts come faster than x ms, assume it's a bounce and ignore
+    if (interrupt_time - last_interrupt_time > DEBOUNCE_MS)
+ 32a:	1a 01       	movw	r2, r20
+ 32c:	2b 01       	movw	r4, r22
+ 32e:	9a 01       	movw	r18, r20
+ 330:	ab 01       	movw	r20, r22
+ 332:	60 e0       	ldi	r22, 0x00	; 0
+ 334:	70 e0       	ldi	r23, 0x00	; 0
+ 336:	80 e0       	ldi	r24, 0x00	; 0
+ 338:	90 e0       	ldi	r25, 0x00	; 0
+ 33a:	a0 90 62 00 	lds	r10, 0x0062	; 0x800062 <__data_end>
+ 33e:	b0 90 63 00 	lds	r11, 0x0063	; 0x800063 <__data_end+0x1>
+ 342:	c0 90 64 00 	lds	r12, 0x0064	; 0x800064 <__data_end+0x2>
+ 346:	d0 90 65 00 	lds	r13, 0x0065	; 0x800065 <__data_end+0x3>
+ 34a:	e0 90 66 00 	lds	r14, 0x0066	; 0x800066 <__data_end+0x4>
+ 34e:	f0 90 67 00 	lds	r15, 0x0067	; 0x800067 <__data_end+0x5>
+ 352:	00 91 68 00 	lds	r16, 0x0068	; 0x800068 <__data_end+0x6>
+ 356:	10 91 69 00 	lds	r17, 0x0069	; 0x800069 <__data_end+0x7>
+ 35a:	74 d1       	rcall	.+744    	; 0x644 <__subdi3>
+ 35c:	28 3c       	cpi	r18, 0xC8	; 200
+ 35e:	31 05       	cpc	r19, r1
+ 360:	41 05       	cpc	r20, r1
+ 362:	51 05       	cpc	r21, r1
+ 364:	61 05       	cpc	r22, r1
+ 366:	71 05       	cpc	r23, r1
+ 368:	81 05       	cpc	r24, r1
+ 36a:	91 05       	cpc	r25, r1
+ 36c:	d9 f0       	breq	.+54     	; 0x3a4 <__vector_2+0xda>
+ 36e:	d0 f0       	brcs	.+52     	; 0x3a4 <__vector_2+0xda>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:331
+    {
+        while (digitalRead(PIN_INPUT_SWITCH) == LOW) _delay_ms(DEBOUNCE_MS);
+ 370:	84 de       	rcall	.-760    	; 0x7a <digitalRead.constprop.0>
+ 372:	89 2b       	or	r24, r25
+ 374:	51 f4       	brne	.+20     	; 0x38a <__vector_2+0xc0>
+_delay_ms():
+c:\users\tiago\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 376:	2f ef       	ldi	r18, 0xFF	; 255
+ 378:	81 ee       	ldi	r24, 0xE1	; 225
+ 37a:	94 e0       	ldi	r25, 0x04	; 4
+ 37c:	21 50       	subi	r18, 0x01	; 1
+ 37e:	80 40       	sbci	r24, 0x00	; 0
+ 380:	90 40       	sbci	r25, 0x00	; 0
+ 382:	e1 f7       	brne	.-8      	; 0x37c <__vector_2+0xb2>
+ 384:	00 c0       	rjmp	.+0      	; 0x386 <__vector_2+0xbc>
+ 386:	00 00       	nop
+ 388:	f3 cf       	rjmp	.-26     	; 0x370 <__vector_2+0xa6>
+__vector_2():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:333
+
+        if (fan_state == FAN_STATE_ON) {
+ 38a:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 38e:	81 30       	cpi	r24, 0x01	; 1
+ 390:	d1 f5       	brne	.+116    	; 0x406 <__LOCK_REGION_LENGTH__+0x6>
+disableFan():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:232
+ *   Disable fan by set 0 PWM speed and cut fan GND by the Power FET
+ *
+ *   returns: void
+ */
+void disableFan() {
+    setFanSpeed(FAN_SPEED_OFF, false);
+ 392:	60 e0       	ldi	r22, 0x00	; 0
+ 394:	80 e0       	ldi	r24, 0x00	; 0
+ 396:	ca de       	rcall	.-620    	; 0x12c <setFanSpeed(unsigned char, bool)>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:233
+    fan_state = FAN_STATE_OFF_BYSWITCH;
+ 398:	82 e0       	ldi	r24, 0x02	; 2
+ 39a:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+__vector_2():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:336
+        while (digitalRead(PIN_INPUT_SWITCH) == LOW) _delay_ms(DEBOUNCE_MS);
+
+        if (fan_state == FAN_STATE_ON) {
+            disableFan();
+#if defined(USE_EEPROM_SETTINGS) && USE_EEPROM_SETTINGS
+            userSettings.lastFanState = false;
+ 39e:	10 92 77 00 	sts	0x0077, r1	; 0x800077 <userSettings+0x3>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:347
+            kickStartFan();
+#endif
+            enableFan();
+#if defined(USE_EEPROM_SETTINGS) && USE_EEPROM_SETTINGS
+            userSettings.lastFanState = true;
+            EEPROM.put(EPPROM_ADDRESS_SETTINGS, userSettings);
+ 3a2:	2a df       	rcall	.-428    	; 0x1f8 <UserSettings const& EEPROMClass::put<UserSettings>(int, UserSettings const&) [clone .isra.2] [clone .constprop.6]>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:351
+#endif
+        }
+    }
+    last_interrupt_time = interrupt_time;
+ 3a4:	20 92 62 00 	sts	0x0062, r2	; 0x800062 <__data_end>
+ 3a8:	30 92 63 00 	sts	0x0063, r3	; 0x800063 <__data_end+0x1>
+ 3ac:	40 92 64 00 	sts	0x0064, r4	; 0x800064 <__data_end+0x2>
+ 3b0:	50 92 65 00 	sts	0x0065, r5	; 0x800065 <__data_end+0x3>
+ 3b4:	10 92 66 00 	sts	0x0066, r1	; 0x800066 <__data_end+0x4>
+ 3b8:	10 92 67 00 	sts	0x0067, r1	; 0x800067 <__data_end+0x5>
+ 3bc:	10 92 68 00 	sts	0x0068, r1	; 0x800068 <__data_end+0x6>
+ 3c0:	10 92 69 00 	sts	0x0069, r1	; 0x800069 <__data_end+0x7>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:352
+}
+ 3c4:	ff 91       	pop	r31
+ 3c6:	ef 91       	pop	r30
+ 3c8:	bf 91       	pop	r27
+ 3ca:	af 91       	pop	r26
+ 3cc:	9f 91       	pop	r25
+ 3ce:	8f 91       	pop	r24
+ 3d0:	7f 91       	pop	r23
+ 3d2:	6f 91       	pop	r22
+ 3d4:	5f 91       	pop	r21
+ 3d6:	4f 91       	pop	r20
+ 3d8:	3f 91       	pop	r19
+ 3da:	2f 91       	pop	r18
+ 3dc:	1f 91       	pop	r17
+ 3de:	0f 91       	pop	r16
+ 3e0:	ff 90       	pop	r15
+ 3e2:	ef 90       	pop	r14
+ 3e4:	df 90       	pop	r13
+ 3e6:	cf 90       	pop	r12
+ 3e8:	bf 90       	pop	r11
+ 3ea:	af 90       	pop	r10
+ 3ec:	9f 90       	pop	r9
+ 3ee:	8f 90       	pop	r8
+ 3f0:	7f 90       	pop	r7
+ 3f2:	6f 90       	pop	r6
+ 3f4:	5f 90       	pop	r5
+ 3f6:	4f 90       	pop	r4
+ 3f8:	3f 90       	pop	r3
+ 3fa:	2f 90       	pop	r2
+ 3fc:	0f 90       	pop	r0
+ 3fe:	0f be       	out	0x3f, r0	; 63
+ 400:	0f 90       	pop	r0
+ 402:	1f 90       	pop	r1
+ 404:	18 95       	reti
+kickStartFan():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:249
+ *   NOTES: Program will idle during duration time, no other action will perform in meantime.
+ *   returns: void
+ */
+void kickStartFan(const uint8_t speed = FAN_KICKSTART_SPEED, const uint16_t duration = FAN_KICKSTART_DURATION)
+{
+    readFanSpeed();
+ 406:	de de       	rcall	.-580    	; 0x1c4 <readFanSpeed()>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:250
+    if (pwm_value > FAN_MIN_PWM_TO_ROTATE) {
+ 408:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <pwm_value>
+ 40c:	83 30       	cpi	r24, 0x03	; 3
+ 40e:	60 f0       	brcs	.+24     	; 0x428 <__LOCK_REGION_LENGTH__+0x28>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:251
+        setFanSpeed(speed);
+ 410:	61 e0       	ldi	r22, 0x01	; 1
+ 412:	80 ea       	ldi	r24, 0xA0	; 160
+ 414:	8b de       	rcall	.-746    	; 0x12c <setFanSpeed(unsigned char, bool)>
+_delay_ms():
+c:\users\tiago\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 416:	ef ef       	ldi	r30, 0xFF	; 255
+ 418:	23 ed       	ldi	r18, 0xD3	; 211
+ 41a:	80 e3       	ldi	r24, 0x30	; 48
+ 41c:	e1 50       	subi	r30, 0x01	; 1
+ 41e:	20 40       	sbci	r18, 0x00	; 0
+ 420:	80 40       	sbci	r24, 0x00	; 0
+ 422:	e1 f7       	brne	.-8      	; 0x41c <__LOCK_REGION_LENGTH__+0x1c>
+ 424:	00 c0       	rjmp	.+0      	; 0x426 <__LOCK_REGION_LENGTH__+0x26>
+ 426:	00 00       	nop
+enableFan():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:216
+ */
+void enableFan() {
+#if defined(FAN_FIXED_SPEED) && FAN_FIXED_SPEED > 0
+    pwm_value = FAN_FIXED_SPEED;
+#else
+    readFanSpeed();
+ 428:	cd de       	rcall	.-614    	; 0x1c4 <readFanSpeed()>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:221
+#endif
+
+    //if (lastPwmValue == pwmValue) return; // Try to spare some useless cycles?
+
+    setFanSpeed(pwm_value, false);
+ 42a:	60 e0       	ldi	r22, 0x00	; 0
+ 42c:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <pwm_value>
+ 430:	7d de       	rcall	.-774    	; 0x12c <setFanSpeed(unsigned char, bool)>
+__vector_2():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:346
+#if defined(FAN_RE_ENABLE_KICKSTART) && FAN_RE_ENABLE_KICKSTART
+            kickStartFan();
+#endif
+            enableFan();
+#if defined(USE_EEPROM_SETTINGS) && USE_EEPROM_SETTINGS
+            userSettings.lastFanState = true;
+ 432:	81 e0       	ldi	r24, 0x01	; 1
+ 434:	80 93 77 00 	sts	0x0077, r24	; 0x800077 <userSettings+0x3>
+ 438:	b4 cf       	rjmp	.-152    	; 0x3a2 <__vector_2+0xd8>
+
+0000043a <main>:
+init():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:804
+*/
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+    #if defined(WGM01) // if Timer0 has PWM
+      TCCR0A = (1<<WGM01) | (1<<WGM00);
+ 43a:	83 e0       	ldi	r24, 0x03	; 3
+ 43c:	8a bd       	out	0x2a, r24	; 42
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:807
+    #endif
+    #if defined(TCCR0B) //The x61 has a wacky Timer0!
+      TCCR0B = (MillisTimer_Prescale_Index << CS00);
+ 43e:	83 bf       	out	0x33, r24	; 51
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:828
+    TCCR1A = 1<<WGM10;
+    TCCR1B = (1<<WGM12) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 440:	78 94       	sei
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:833
+
+  #ifndef DISABLEMILLIS
+    // Enable the overflow interrupt (this is the basic system tic-toc for millis)
+    #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+      sbi(TIMSK, TOIE0);
+ 442:	89 b7       	in	r24, 0x39	; 57
+ 444:	82 60       	ori	r24, 0x02	; 2
+ 446:	89 bf       	out	0x39, r24	; 57
+initToneTimerInternal():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:624
+    #elif defined(__AVR_ATtiny43__)
+      TCCR1A = 3; //WGM 10=1, WGM11=1
+      TCCR1B = 3; //prescaler of 64
+    #elif (TIMER_TO_USE_FOR_TONE == 1) && defined(TCCR1) // ATtiny x5
+      // Use the Tone Timer for fast PWM as phase correct not supported by this timer
+      GTCCR = (1<<PWM1B);
+ 448:	80 e4       	ldi	r24, 0x40	; 64
+ 44a:	8c bd       	out	0x2c, r24	; 44
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:625
+      OCR1C = 0xFF; //Use 255 as the top to match with the others as this module doesn't have a 8bit PWM mode.
+ 44c:	8f ef       	ldi	r24, 0xFF	; 255
+ 44e:	8d bd       	out	0x2d, r24	; 45
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:626
+      TCCR1 = (1<<CTC1) | (1<<PWM1A) | (ToneTimer_Prescale_Index << CS10);
+ 450:	87 ec       	ldi	r24, 0xC7	; 199
+ 452:	80 bf       	out	0x30, r24	; 48
+init():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\cores\tiny/wiring.c:880
+  #if defined( INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER ) && INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER
+    #if defined(ADCSRA)
+      // set a2d prescale factor
+      // ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+      // dude, this is being called on startup. We know that ADCSRA is 0! Why add a RMW cycle?!
+      ADCSRA = (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+ 454:	86 e8       	ldi	r24, 0x86	; 134
+ 456:	86 b9       	out	0x06, r24	; 6
+setup():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:258
+    }
+}
+
+void setup()
+{
+    pinMode(PIN_OUTPUT_FAN_PWM, OUTPUT);
+ 458:	61 e0       	ldi	r22, 0x01	; 1
+ 45a:	81 e0       	ldi	r24, 0x01	; 1
+ 45c:	27 de       	rcall	.-946    	; 0xac <pinMode>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:259
+    pinMode(PIN_OUTPUT_FAN_GND, OUTPUT);
+ 45e:	61 e0       	ldi	r22, 0x01	; 1
+ 460:	84 e0       	ldi	r24, 0x04	; 4
+ 462:	24 de       	rcall	.-952    	; 0xac <pinMode>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:260
+    pinMode(PIN_INPUT_POT, INPUT);
+ 464:	60 e0       	ldi	r22, 0x00	; 0
+ 466:	81 e8       	ldi	r24, 0x81	; 129
+ 468:	21 de       	rcall	.-958    	; 0xac <pinMode>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:261
+    pinMode(PIN_INPUT_SWITCH, INPUT);
+ 46a:	60 e0       	ldi	r22, 0x00	; 0
+ 46c:	83 e8       	ldi	r24, 0x83	; 131
+ 46e:	1e de       	rcall	.-964    	; 0xac <pinMode>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:263
+
+    INIT_PWM();
+ 470:	81 e2       	ldi	r24, 0x21	; 33
+ 472:	8a bd       	out	0x2a, r24	; 42
+ 474:	89 e0       	ldi	r24, 0x09	; 9
+ 476:	83 bf       	out	0x33, r24	; 51
+ 478:	80 ea       	ldi	r24, 0xA0	; 160
+ 47a:	89 bd       	out	0x29, r24	; 41
+ 47c:	88 bd       	out	0x28, r24	; 40
+operator*():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ 47e:	90 e0       	ldi	r25, 0x00	; 0
+ 480:	80 e0       	ldi	r24, 0x00	; 0
+ 482:	73 d0       	rcall	.+230    	; 0x56a <eeprom_read_byte>
+_ZN11EEPROMClass3getI12UserSettingsEERT_iS3_.isra.1():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:148
+
+    //Functionality to 'get' and 'put' objects to and from EEPROM.
+    template< typename T > T &get( int idx, T &t ){
+        EEPtr e = idx;
+        uint8_t *ptr = (uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  *ptr++ = *e;
+ 484:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <userSettings>
+operator*():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ 488:	81 e0       	ldi	r24, 0x01	; 1
+ 48a:	90 e0       	ldi	r25, 0x00	; 0
+ 48c:	6e d0       	rcall	.+220    	; 0x56a <eeprom_read_byte>
+_ZN11EEPROMClass3getI12UserSettingsEERT_iS3_.isra.1():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:148
+
+    //Functionality to 'get' and 'put' objects to and from EEPROM.
+    template< typename T > T &get( int idx, T &t ){
+        EEPtr e = idx;
+        uint8_t *ptr = (uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  *ptr++ = *e;
+ 48e:	80 93 75 00 	sts	0x0075, r24	; 0x800075 <userSettings+0x1>
+operator*():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ 492:	82 e0       	ldi	r24, 0x02	; 2
+ 494:	90 e0       	ldi	r25, 0x00	; 0
+ 496:	69 d0       	rcall	.+210    	; 0x56a <eeprom_read_byte>
+_ZN11EEPROMClass3getI12UserSettingsEERT_iS3_.isra.1():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:148
+
+    //Functionality to 'get' and 'put' objects to and from EEPROM.
+    template< typename T > T &get( int idx, T &t ){
+        EEPtr e = idx;
+        uint8_t *ptr = (uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  *ptr++ = *e;
+ 498:	80 93 76 00 	sts	0x0076, r24	; 0x800076 <userSettings+0x2>
+operator*():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ 49c:	83 e0       	ldi	r24, 0x03	; 3
+ 49e:	90 e0       	ldi	r25, 0x00	; 0
+ 4a0:	64 d0       	rcall	.+200    	; 0x56a <eeprom_read_byte>
+_ZN11EEPROMClass3getI12UserSettingsEERT_iS3_.isra.1():
+D:\Tiago\OneDrive\Programming\Arduino\Hardware\ATTinyCore\avr\libraries\EEPROM/EEPROM.h:148
+
+    //Functionality to 'get' and 'put' objects to and from EEPROM.
+    template< typename T > T &get( int idx, T &t ){
+        EEPtr e = idx;
+        uint8_t *ptr = (uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  *ptr++ = *e;
+ 4a2:	80 93 77 00 	sts	0x0077, r24	; 0x800077 <userSettings+0x3>
+setup():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:277
+    else if (userSettings.eppromVersion != EPPROM_VERSION)
+    {
+        // Different EPPROM version, handle differences and update
+    }*/
+
+    userSettings.eppromVersion = EPPROM_VERSION;
+ 4a6:	81 e0       	ldi	r24, 0x01	; 1
+ 4a8:	90 e0       	ldi	r25, 0x00	; 0
+ 4aa:	90 93 75 00 	sts	0x0075, r25	; 0x800075 <userSettings+0x1>
+ 4ae:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <userSettings>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:279
+
+    if (digitalRead(PIN_INPUT_SWITCH) == LOW)
+ 4b2:	e3 dd       	rcall	.-1082   	; 0x7a <digitalRead.constprop.0>
+ 4b4:	89 2b       	or	r24, r25
+ 4b6:	b1 f4       	brne	.+44     	; 0x4e4 <main+0xaa>
+_delay_ms():
+c:\users\tiago\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 4b8:	2f ef       	ldi	r18, 0xFF	; 255
+ 4ba:	81 ee       	ldi	r24, 0xE1	; 225
+ 4bc:	94 e0       	ldi	r25, 0x04	; 4
+ 4be:	21 50       	subi	r18, 0x01	; 1
+ 4c0:	80 40       	sbci	r24, 0x00	; 0
+ 4c2:	90 40       	sbci	r25, 0x00	; 0
+ 4c4:	e1 f7       	brne	.-8      	; 0x4be <main+0x84>
+ 4c6:	00 c0       	rjmp	.+0      	; 0x4c8 <main+0x8e>
+ 4c8:	00 00       	nop
+setup():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:282
+    {
+        _delay_ms(DEBOUNCE_MS);
+        while (digitalRead(PIN_INPUT_SWITCH) == LOW) { _delay_ms(DEBOUNCE_MS); }
+ 4ca:	d7 dd       	rcall	.-1106   	; 0x7a <digitalRead.constprop.0>
+ 4cc:	89 2b       	or	r24, r25
+ 4ce:	a1 f3       	breq	.-24     	; 0x4b8 <main+0x7e>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:284
+
+        INCREMENT_RANGE_LOOP(userSettings.powerOnAction, 0, POWERON_ACTION_USELASTSTATE);
+ 4d0:	80 91 76 00 	lds	r24, 0x0076	; 0x800076 <userSettings+0x2>
+ 4d4:	8f 5f       	subi	r24, 0xFF	; 255
+ 4d6:	80 93 76 00 	sts	0x0076, r24	; 0x800076 <userSettings+0x2>
+ 4da:	83 30       	cpi	r24, 0x03	; 3
+ 4dc:	10 f0       	brcs	.+4      	; 0x4e2 <main+0xa8>
+ 4de:	10 92 76 00 	sts	0x0076, r1	; 0x800076 <userSettings+0x2>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:285
+        EEPROM.put(EPPROM_ADDRESS_SETTINGS, userSettings);
+ 4e2:	8a de       	rcall	.-748    	; 0x1f8 <UserSettings const& EEPROMClass::put<UserSettings>(int, UserSettings const&) [clone .isra.2] [clone .constprop.6]>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:290
+    }
+
+#endif
+
+    if(userSettings.powerOnAction == POWERON_ACTION_OFF || (userSettings.powerOnAction == POWERON_ACTION_USELASTSTATE && !userSettings.lastFanState))
+ 4e4:	80 91 76 00 	lds	r24, 0x0076	; 0x800076 <userSettings+0x2>
+ 4e8:	81 30       	cpi	r24, 0x01	; 1
+ 4ea:	31 f0       	breq	.+12     	; 0x4f8 <main+0xbe>
+ 4ec:	82 30       	cpi	r24, 0x02	; 2
+ 4ee:	59 f5       	brne	.+86     	; 0x546 <main+0x10c>
+ 4f0:	80 91 77 00 	lds	r24, 0x0077	; 0x800077 <userSettings+0x3>
+ 4f4:	81 11       	cpse	r24, r1
+ 4f6:	27 c0       	rjmp	.+78     	; 0x546 <main+0x10c>
+disableFan():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:232
+ *   Disable fan by set 0 PWM speed and cut fan GND by the Power FET
+ *
+ *   returns: void
+ */
+void disableFan() {
+    setFanSpeed(FAN_SPEED_OFF, false);
+ 4f8:	60 e0       	ldi	r22, 0x00	; 0
+ 4fa:	80 e0       	ldi	r24, 0x00	; 0
+ 4fc:	17 de       	rcall	.-978    	; 0x12c <setFanSpeed(unsigned char, bool)>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:233
+    fan_state = FAN_STATE_OFF_BYSWITCH;
+ 4fe:	82 e0       	ldi	r24, 0x02	; 2
+ 500:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+setup():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:305
+    }
+    
+
+#if defined(FAN_ENABLE_USER_SWITCH) && FAN_ENABLE_USER_SWITCH
+    // Interrupts
+    GIMSK |= (1 << PCIE);   // pin change interrupt enable
+ 504:	8b b7       	in	r24, 0x3b	; 59
+ 506:	80 62       	ori	r24, 0x20	; 32
+ 508:	8b bf       	out	0x3b, r24	; 59
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:306
+    PCMSK |= (1 << PCINT3); // pin change interrupt enabled for PCINT4                                
+ 50a:	ab 9a       	sbi	0x15, 3	; 21
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:307
+    sei();                  // ensure interrupts enabled so we can wake up again
+ 50c:	78 94       	sei
+loop():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:314
+}
+
+void loop()
+{
+    // Read and set fan speed if not disabled
+    if (fan_state != FAN_STATE_OFF_BYSWITCH)
+ 50e:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 512:	82 30       	cpi	r24, 0x02	; 2
+ 514:	71 f0       	breq	.+28     	; 0x532 <main+0xf8>
+enableFan():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:216
+ */
+void enableFan() {
+#if defined(FAN_FIXED_SPEED) && FAN_FIXED_SPEED > 0
+    pwm_value = FAN_FIXED_SPEED;
+#else
+    readFanSpeed();
+ 516:	56 de       	rcall	.-852    	; 0x1c4 <readFanSpeed()>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:221
+#endif
+
+    //if (lastPwmValue == pwmValue) return; // Try to spare some useless cycles?
+
+    setFanSpeed(pwm_value, false);
+ 518:	60 e0       	ldi	r22, 0x00	; 0
+ 51a:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <pwm_value>
+ 51e:	06 de       	rcall	.-1012   	; 0x12c <setFanSpeed(unsigned char, bool)>
+_delay_ms():
+c:\users\tiago\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 520:	2f ef       	ldi	r18, 0xFF	; 255
+ 522:	84 e3       	ldi	r24, 0x34	; 52
+ 524:	9c e0       	ldi	r25, 0x0C	; 12
+ 526:	21 50       	subi	r18, 0x01	; 1
+ 528:	80 40       	sbci	r24, 0x00	; 0
+ 52a:	90 40       	sbci	r25, 0x00	; 0
+ 52c:	e1 f7       	brne	.-8      	; 0x526 <main+0xec>
+ 52e:	00 c0       	rjmp	.+0      	; 0x530 <main+0xf6>
+ 530:	00 00       	nop
+ 532:	2f ef       	ldi	r18, 0xFF	; 255
+ 534:	80 e7       	ldi	r24, 0x70	; 112
+ 536:	92 e0       	ldi	r25, 0x02	; 2
+ 538:	21 50       	subi	r18, 0x01	; 1
+ 53a:	80 40       	sbci	r24, 0x00	; 0
+ 53c:	90 40       	sbci	r25, 0x00	; 0
+ 53e:	e1 f7       	brne	.-8      	; 0x538 <main+0xfe>
+ 540:	00 c0       	rjmp	.+0      	; 0x542 <main+0x108>
+ 542:	00 00       	nop
+ 544:	e4 cf       	rjmp	.-56     	; 0x50e <main+0xd4>
+kickStartFan():
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:249
+ *   NOTES: Program will idle during duration time, no other action will perform in meantime.
+ *   returns: void
+ */
+void kickStartFan(const uint8_t speed = FAN_KICKSTART_SPEED, const uint16_t duration = FAN_KICKSTART_DURATION)
+{
+    readFanSpeed();
+ 546:	3e de       	rcall	.-900    	; 0x1c4 <readFanSpeed()>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:250
+    if (pwm_value > FAN_MIN_PWM_TO_ROTATE) {
+ 548:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <pwm_value>
+ 54c:	83 30       	cpi	r24, 0x03	; 3
+ 54e:	d0 f2       	brcs	.-76     	; 0x504 <main+0xca>
+D:\Tiago\OneDrive\Programming\Eagle\Projects\FanController\firmware/firmware.ino:251
+        setFanSpeed(speed);
+ 550:	61 e0       	ldi	r22, 0x01	; 1
+ 552:	80 ea       	ldi	r24, 0xA0	; 160
+ 554:	eb dd       	rcall	.-1066   	; 0x12c <setFanSpeed(unsigned char, bool)>
+_delay_ms():
+c:\users\tiago\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 556:	2f ef       	ldi	r18, 0xFF	; 255
+ 558:	83 ed       	ldi	r24, 0xD3	; 211
+ 55a:	90 e3       	ldi	r25, 0x30	; 48
+ 55c:	21 50       	subi	r18, 0x01	; 1
+ 55e:	80 40       	sbci	r24, 0x00	; 0
+ 560:	90 40       	sbci	r25, 0x00	; 0
+ 562:	e1 f7       	brne	.-8      	; 0x55c <main+0x122>
+ 564:	00 c0       	rjmp	.+0      	; 0x566 <main+0x12c>
+ 566:	00 00       	nop
+ 568:	cd cf       	rjmp	.-102    	; 0x504 <main+0xca>
+
+0000056a <eeprom_read_byte>:
+eeprom_read_byte():
+ 56a:	e1 99       	sbic	0x1c, 1	; 28
+ 56c:	fe cf       	rjmp	.-4      	; 0x56a <eeprom_read_byte>
+ 56e:	9f bb       	out	0x1f, r25	; 31
+ 570:	8e bb       	out	0x1e, r24	; 30
+ 572:	e0 9a       	sbi	0x1c, 0	; 28
+ 574:	99 27       	eor	r25, r25
+ 576:	8d b3       	in	r24, 0x1d	; 29
+ 578:	08 95       	ret
+
+0000057a <eeprom_write_byte>:
+eeprom_write_byte():
+ 57a:	26 2f       	mov	r18, r22
+
+0000057c <eeprom_write_r18>:
+ 57c:	e1 99       	sbic	0x1c, 1	; 28
+ 57e:	fe cf       	rjmp	.-4      	; 0x57c <eeprom_write_r18>
+ 580:	1c ba       	out	0x1c, r1	; 28
+ 582:	9f bb       	out	0x1f, r25	; 31
+ 584:	8e bb       	out	0x1e, r24	; 30
+ 586:	2d bb       	out	0x1d, r18	; 29
+ 588:	0f b6       	in	r0, 0x3f	; 63
+ 58a:	f8 94       	cli
+ 58c:	e2 9a       	sbi	0x1c, 2	; 28
+ 58e:	e1 9a       	sbi	0x1c, 1	; 28
+ 590:	0f be       	out	0x3f, r0	; 63
+ 592:	01 96       	adiw	r24, 0x01	; 1
+ 594:	08 95       	ret
+
+00000596 <__mulsi3>:
+__mulsi3():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:445
+ 596:	ee 27       	eor	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:446
+ 598:	ff 27       	eor	r31, r31
+
+0000059a <__mulsi3_helper>:
+__mulsi3_helper():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:451
+ 59a:	aa 27       	eor	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:452
+ 59c:	bb 27       	eor	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:453
+ 59e:	08 c0       	rjmp	.+16     	; 0x5b0 <__mulsi3_helper+0x16>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:457
+ 5a0:	a2 0f       	add	r26, r18
+ 5a2:	b3 1f       	adc	r27, r19
+ 5a4:	e4 1f       	adc	r30, r20
+ 5a6:	f5 1f       	adc	r31, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:460
+ 5a8:	22 0f       	add	r18, r18
+ 5aa:	33 1f       	adc	r19, r19
+ 5ac:	44 1f       	adc	r20, r20
+ 5ae:	55 1f       	adc	r21, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:463
+ 5b0:	96 95       	lsr	r25
+ 5b2:	87 95       	ror	r24
+ 5b4:	77 95       	ror	r23
+ 5b6:	67 95       	ror	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:465
+ 5b8:	98 f3       	brcs	.-26     	; 0x5a0 <__mulsi3_helper+0x6>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:467
+ 5ba:	70 40       	sbci	r23, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:468
+ 5bc:	a9 f7       	brne	.-22     	; 0x5a8 <__mulsi3_helper+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:469
+ 5be:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:470
+ 5c0:	99 f7       	brne	.-26     	; 0x5a8 <__mulsi3_helper+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:473
+ 5c2:	bd 01       	movw	r22, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:474
+ 5c4:	cf 01       	movw	r24, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:480
+ 5c6:	08 95       	ret
+
+000005c8 <__divmodsi4>:
+__divmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1686
+ 5c8:	05 2e       	mov	r0, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1687
+ 5ca:	97 fb       	bst	r25, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1688
+ 5cc:	16 f4       	brtc	.+4      	; 0x5d2 <__divmodsi4+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1689
+ 5ce:	00 94       	com	r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1690
+ 5d0:	0f d0       	rcall	.+30     	; 0x5f0 <__negsi2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1692
+ 5d2:	57 fd       	sbrc	r21, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1693
+ 5d4:	05 d0       	rcall	.+10     	; 0x5e0 <__divmodsi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1694
+ 5d6:	14 d0       	rcall	.+40     	; 0x600 <__udivmodsi4>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1695
+ 5d8:	07 fc       	sbrc	r0, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1696
+ 5da:	02 d0       	rcall	.+4      	; 0x5e0 <__divmodsi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1697
+ 5dc:	46 f4       	brtc	.+16     	; 0x5ee <__divmodsi4_exit>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1698
+ 5de:	08 c0       	rjmp	.+16     	; 0x5f0 <__negsi2>
+
+000005e0 <__divmodsi4_neg2>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1701
+ 5e0:	50 95       	com	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1702
+ 5e2:	40 95       	com	r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1703
+ 5e4:	30 95       	com	r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1704
+ 5e6:	21 95       	neg	r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1705
+ 5e8:	3f 4f       	sbci	r19, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1706
+ 5ea:	4f 4f       	sbci	r20, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1707
+ 5ec:	5f 4f       	sbci	r21, 0xFF	; 255
+
+000005ee <__divmodsi4_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1709
+ 5ee:	08 95       	ret
+
+000005f0 <__negsi2>:
+__negsi2():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1718
+ 5f0:	90 95       	com	r25
+ 5f2:	80 95       	com	r24
+ 5f4:	70 95       	com	r23
+ 5f6:	61 95       	neg	r22
+ 5f8:	7f 4f       	sbci	r23, 0xFF	; 255
+ 5fa:	8f 4f       	sbci	r24, 0xFF	; 255
+ 5fc:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1719
+ 5fe:	08 95       	ret
+
+00000600 <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ 600:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ 602:	1a 2e       	mov	r1, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ 604:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ 606:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ 608:	fd 01       	movw	r30, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ 60a:	0d c0       	rjmp	.+26     	; 0x626 <__udivmodsi4_ep>
+
+0000060c <__udivmodsi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ 60c:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ 60e:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ 610:	ee 1f       	adc	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ 612:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ 614:	a2 17       	cp	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ 616:	b3 07       	cpc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ 618:	e4 07       	cpc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ 61a:	f5 07       	cpc	r31, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ 61c:	20 f0       	brcs	.+8      	; 0x626 <__udivmodsi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ 61e:	a2 1b       	sub	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ 620:	b3 0b       	sbc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ 622:	e4 0b       	sbc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ 624:	f5 0b       	sbc	r31, r21
+
+00000626 <__udivmodsi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ 626:	66 1f       	adc	r22, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ 628:	77 1f       	adc	r23, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ 62a:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ 62c:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ 62e:	1a 94       	dec	r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ 630:	69 f7       	brne	.-38     	; 0x60c <__udivmodsi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ 632:	60 95       	com	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ 634:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ 636:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ 638:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ 63a:	9b 01       	movw	r18, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ 63c:	ac 01       	movw	r20, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ 63e:	bd 01       	movw	r22, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ 640:	cf 01       	movw	r24, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ 642:	08 95       	ret
+
+00000644 <__subdi3>:
+__subdi3():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2080
+ 644:	2a 19       	sub	r18, r10
+ 646:	3b 09       	sbc	r19, r11
+ 648:	4c 09       	sbc	r20, r12
+ 64a:	5d 09       	sbc	r21, r13
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2081
+ 64c:	6e 09       	sbc	r22, r14
+ 64e:	7f 09       	sbc	r23, r15
+ 650:	80 0b       	sbc	r24, r16
+ 652:	91 0b       	sbc	r25, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2082
+ 654:	08 95       	ret
+
+00000656 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 656:	f8 94       	cli
+
+00000658 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 658:	ff cf       	rjmp	.-2      	; 0x658 <__stop_program>
