@@ -1,0 +1,4 @@
+Low fuses: 0xE2
+High fuses: 0xFF
+Extended fuses: 0xFF
+Lock fuses: 0xFF

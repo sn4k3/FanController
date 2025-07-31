@@ -1,0 +1,198 @@
+(footprint "3223W_331"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "3 mm SMD Trimming Potentiometer Top Adjust\n\nSource: http://www.bourns.com/data/global/PDFs/3223.PDF")
+	(property "Reference" "REF**"
+		(at -1.5875 -2.2225 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "eb09fb1d-ab30-4a27-9a81-d9d276c4df53")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "3223W_331"
+		(at -1.905 3.4925 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b0984af3-c260-4450-a51b-ade8fc350244")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05de6db9-1301-4073-b10d-86c0200fd67c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "66bb2586-15d8-4353-b395-0d594bcdb6c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -1.85 -1.5)
+		(end -1.0075 -1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "42824d4f-6bad-46b6-be6d-420e6205b5d4")
+	)
+	(fp_line
+		(start -1.85 -0.0875)
+		(end -1.85 -1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "85b99e06-cb73-44e7-a309-883979ce1359")
+	)
+	(fp_line
+		(start 0.58 1.5)
+		(end -0.58 1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2284f19-3f01-4f7c-89f6-ee0a20dfc9a4")
+	)
+	(fp_line
+		(start 1.0075 -1.5)
+		(end 1.85 -1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "91112619-af82-4499-b8c6-6b294f011aad")
+	)
+	(fp_line
+		(start 1.85 -1.5)
+		(end 1.85 -0.0875)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "25b72856-7c93-455a-91b3-c7496825673a")
+	)
+	(fp_circle
+		(center 1.05 -0.725)
+		(end 1.5755 -0.725)
+		(stroke
+			(width 0.1016)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "bb48e356-106a-412d-9f4a-afa45c4c33dd")
+	)
+	(fp_poly
+		(pts
+			(xy 0.55 -0.6) (xy 1.55 -0.6) (xy 1.55 -0.85) (xy 0.55 -0.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5b14d9d7-1657-4dd4-8e53-6ccb870ffefc")
+	)
+	(fp_line
+		(start -1.85 -1.5)
+		(end 1.85 -1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "81b0a180-1a72-4160-ad69-34646e149687")
+	)
+	(fp_line
+		(start -1.85 1.5)
+		(end -1.85 -1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0421e28b-07e6-4992-a88d-2b62eab79d30")
+	)
+	(fp_line
+		(start 1.85 -1.5)
+		(end 1.85 1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bcae950f-6f3c-459f-b6c5-2bd4912c57ba")
+	)
+	(fp_line
+		(start 1.85 1.5)
+		(end -1.85 1.5)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1dc558d3-bd9d-450e-ae90-433ed411f614")
+	)
+	(pad "1" smd rect
+		(at -1.4 1.215)
+		(size 0.9 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "a45b723c-a224-4cd1-8595-c078dfce87ea")
+	)
+	(pad "2" smd rect
+		(at 0 -1.215)
+		(size 1.3 1.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "cc96a063-6160-417d-994f-3fadf33b43c8")
+	)
+	(pad "3" smd rect
+		(at 1.4 1.215)
+		(size 0.9 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "bc0a6b93-f1df-43aa-b200-309589305c25")
+	)
+	(embedded_fonts no)
+)
